@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secret Flavours offers unforgettable culinary adventures in Valencia and London. Explore our dinner experiences and food tours.">
+    <link rel="icon" type="image/png" href="images/symbol-sf.png">
+    <title>Secret Flavours - Food Experiences in Valencia and London</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Cardo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Cardo', serif;
+            --color-text: #333;
+            --color-heading: #000;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            line-height: 1.5;
+            color: var(--color-text);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--color-heading);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-heading);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s ease-in-out;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="alert alert-light alert-dismissible fade show position-fixed bottom-0 start-0 end-0 p-3" role="alert" style="z-index: 1050; background-color: #000000; color: #ffffff; border-radius: 0;">
+        <div class="container">
+            September and October tickets available with discounted prices.
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close">
+                <span class="sr-only">Close alert</span>
+            </button>
+        </div>
+    </div>
+    
+    <header>
+        <!-- Logo -->
+        <div class="container text-center mt-4 py-2" style="margin-top: 300px;">
+            <img src="images/logo.png" alt="Secret Flavours Logo" class="img-fluid" style="max-width: 200px;">
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Block -->
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h1 class="display-4">Unforgettable culinary adventures in Valencia</h1>
+                    <p class="lead">Meet your hosts Leili and Daniel and explore a selection of dinner experiences and 
+            food tours to savor the best of Valencia's gastronomy and culture.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Cards -->
+        <section class="container mt-5">
+            <h2 class="sr-only">Our Experiences</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="product1.jpg" class="card-img-top" alt="Intimate dinner setting in Algiroz neighbourhood">
+                        <div class="card-body">
+                            <h3 class="card-title">Secret Flavours of Bahia</h3>
+                            <p class="card-text">Join us in our beautiful home studio in the Algiroz neighbourhood for a cozy, intimate dinner. 
+                                This is a private dinner experience, home cooked for 2 people</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="product2.jpg" class="card-img-top" alt="Tapas spread in Cabanyal">
+                        <div class="card-body">
+                            <h3 class="card-title">Tapas Brasilenas</h3>
+                            <p class="card-text">1 hour tapa experience in the heart of Cabanyal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="product3.jpg" class="card-img-top" alt="Traditional paella dish in Valencia's historic centre">
+                        <div class="card-body">
+                            <h3 class="card-title">Paella Experience</h3>
+                            <p class="card-text">A 3 hour paella experience in the heart of Valencia's historic centre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mt-5 mb-4">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Made with love in Valencia</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <a href="https://www.instagram.com/thesecretflavours/" target="_blank" rel="noopener noreferrer" class="text-dark me-3" aria-label="Follow us on Instagram">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
